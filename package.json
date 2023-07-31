@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client",
+    "e2e"
+  ],
+  "scripts": {
+    "build:client": "yarn workspace Boston-Burger-Reviews-client build",
+    "dev": "yarn workspace Boston-Burger-Reviews-server dev",
+    "dev:debug": "yarn workspace Boston-Burger-Reviews-server dev:debug",
+    "heroku-postbuild": "yarn workspace Boston-Burger-Reviews-client build",
+    "start": "yarn workspace Boston-Burger-Reviews-server start",
+    "dev:cypress": "yarn workspace Boston-Burger-Reviews-server dev:e2e",
+    "e2e:open": "yarn workspace Boston-Burger-Reviews-e2e e2e:open",
+    "e2e:run": "yarn workspace Boston-Burger-Reviews-e2e e2e:run"
+  },
+  "engines": {
+    "node": "^14.19",
+    "yarn": "1.22.10"
+  }
+}

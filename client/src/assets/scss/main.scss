@@ -1,0 +1,36 @@
+@import "./foundation/settings";
+@import "~foundation-sites/scss/foundation";
+@include foundation-everything;
+// place global css here
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+body {
+  color: #1a1416;
+}
+
+.heading {
+  text-align: center;
+}
+
+.tile {
+  background-color: #453e3f;
+  border-radius: 10px;
+  text-align: center;
+  color: #e6e6e6;
+  box-shadow: 5px 5px 5px #453e3f;
+}
+
+.review-tile {
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 5px 5px 5px #6f645780;
+}
